@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>【译】Tech Lead的新项目检查清单 | The Tech Lead's New Project Checklist | Sezina</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-36653228-1','auto');ga('send','pageview');
+</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【译】Tech Lead的新项目检查清单 | The Tech Lead's New Project Checklist</h1><a id="logo" href="/.">Sezina</a><p class="description">Stay Hungry, Stay Foolish</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">【译】Tech Lead的新项目检查清单 | The Tech Lead's New Project Checklist</h1><div class="post-meta">May 19, 2018<span> | </span><span class="category"><a href="/categories/Tech/">Tech</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" data-disqus-identifier="2018/05/19/The-Tech-Leads-New-Project-Checklist/" href="/2018/05/19/The-Tech-Leads-New-Project-Checklist/#disqus_thread"></a><div class="post-content"><p>这是去年的旧文 <a href="https://insimpleterms.blog/2017/08/07/the-tech-leads-new-project-checklist" target="_blank" rel="noopener">The Tech Lead’s New Project Checklist</a> 的翻译。刚好本人现在也是题目中说的Tech Lead（Tech Lead我想不出一个合适的翻译，所以下面直接用英文的Tech Lead）。<br>由于原文只是一篇笔记，所以很多只是记了个要点，需要读者自己去拓展思考，说实话部分点我也没理解作者说什么（可能是我英语水平的原因）。我翻译的也不一定符合原作者的意思，甚至可能翻译错了。我会在不影响原文意思的前提下加入一些话，让它读起来顺畅点。<br>下面是正式的译文。</p>
+<hr>
+<p>这是我在一个“那些在一个新项目开始时tech lead需要知道和做的事”的讨论会中的笔记。这些智慧来自Thoughtworks的 <a href="https://twitter.com/jimbarritt" target="_blank" rel="noopener">@JimBarritt</a>，我只是个搬运工。</p>
+<p>这个清单对全新的团队/项目和tech lead加入前就已经存在的项目都有用。</p>
+<p>前面两项是最有可能导致项目死亡或内耗的：</p>
+<ol>
+<li>基础设施<ul>
+<li>生产环境在哪？这是最重要的一件事。它是怎样的？什么时候就绪可使用？(开发环境在生产环境的事情确定后再考虑)</li>
+<li>我们怎么上线？计划是什么？</li>
+<li>负载均衡怎么做？</li>
+<li>防火墙</li>
+<li>证书</li>
+</ul>
+</li>
+<li>第三方<ul>
+<li>集成！</li>
+<li>如果各集成环境间是超出你能控制的混乱状态，那么保障自己的环境是组织良好有序、顺畅、自动化、边界规划合理等就显得更加重要了。</li>
+</ul>
+</li>
+<li>找出有号召力的人<ul>
+<li>找到所有可以说“No”的人、能够砍预算、能够对你说“你干得很棒”的人，跟他们打照面认识。</li>
+<li>举例：<ul>
+<li>架构师</li>
+<li>对数据保护有控制权的人（当心“organisational scar tissue”(不知道改怎么翻译这个词，看<a href="https://www.johndcook.com/blog/2009/07/30/organizational-scar-tissue/" target="_blank" rel="noopener">这篇文章</a>理解一下)）</li>
+<li>高级信息风险官（SIRO）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>找到任何关于你团队的工作的文档，阅读并理解它</li>
+<li>预算和价值定位？<ul>
+<li>如何更好的定义它？你们为什么做这个项目？Vision是什么？人们能够理解吗？</li>
+<li>一旦找到这些信息，不断重复它们。</li>
+<li>如果有些对整个项目的成功非常重要的假定条件，在每次展示开始时都对它们进行重复。</li>
+</ul>
+</li>
+<li>试着跟每个团队成员进行一对一的面谈<ul>
+<li>试着去了解成员各自的目标、特别是在这个项目中的目标，同时将自己的目标传达给他们。举个例子：比如你有想要离开的区域，就找到那些想要进入该区域的人。（这句翻译起来怪怪的，可能译错了）</li>
+<li>什么是他们的主要痛点和障碍？</li>
+</ul>
+</li>
+<li>和项目经理做朋友，并弄明白他们时怎样管理预算的<ul>
+<li>这对建立信任关系很有帮助</li>
+<li>了解 Chris Matts 所说的 <a href="https://theitriskmanager.wordpress.com/the-real-option-resource/" target="_blank" rel="noopener">“Real Options”</a></li>
+<li>阅读 Bjarte Bogsnes 的 <a href="https://bbrt.org/bjarte-bogsnes/?gclid=CJvs4LiAyNUCFUK7GwodNNgFDQ" target="_blank" rel="noopener">“Beyond Budgeting”</a></li>
+<li>听 Brett Ainsley 在 Agile on the Beach in 2016 上的关于钱、团队和如何记账（account）的演讲 <a href="https://www.youtube.com/watch?v=M72kFSilPCE" target="_blank" rel="noopener">Accounting for Agile software</a></li>
+<li>阅读 Gregor Hohpe 的 <a href="https://leanpub.com/37things" target="_blank" rel="noopener">37 Things One Architect Knows About IT Transformation</a></li>
+<li>不要尝试做一个财务细节上的专家，只要懂得财务的基础知识就可以了：钱是如何运转的？什么是不同的工种？OpEX和CapEx直接的区别是什么？(我也不懂，学习一下：<a href="https://www.investopedia.com/ask/answers/020915/what-difference-between-capex-and-opex.asp" target="_blank" rel="noopener">文章1</a>，<a href="https://www.diffen.com/difference/Capex_vs_Opex" target="_blank" rel="noopener">文章2</a>)</li>
+</ul>
+</li>
+<li>如果有多个团队，找到并结识其他团队的Tech Lead</li>
+<li>弄得交付三人的重要性：交付经理（Delivery Manager）、产品负责人（Product Owner）、tech lead<ul>
+<li>这三者间有时会关系紧张</li>
+<li>和这些人建立联系</li>
+<li>任何决策都必需经过这三者，不然很大可能团队会出问题</li>
+<li>Tech leads有时会有点点远离这些关系。</li>
+</ul>
+</li>
+<li>Backlog：确保边界清晰<ul>
+<li>使用 story trees和 backlog hierarchies（这两个词第一次听是在PMP中，不知道怎么翻译）</li>
+<li>人们会为了在组织中获得更高的地位而努力奋斗</li>
+<li>你需要从高处俯视你正在建立的东西</li>
+</ul>
+</li>
+<li>代码<ul>
+<li>确保你有代码的使用权限</li>
+<li>保持和代码的联系</li>
+<li>找开发给你做一次介绍<ul>
+<li>找团队的新成员做这个能够理清思路（应该是译错了）</li>
+</ul>
+</li>
+<li>你需要对整个代码库有个完整的印象（包括架构上）</li>
+<li>从建立到第一次允许起来可以有多简单？</li>
+</ul>
+</li>
+<li>什么是主要痛点和障碍？<ul>
+<li>项目经理是讨论这个话题的好人选</li>
+</ul>
+</li>
+<li>跨职能（cross-functional）需求<ul>
+<li>扩展性<ul>
+<li>能否降低负载？</li>
+</ul>
+</li>
+<li>安全性<ul>
+<li>是否有人能入侵它？</li>
+</ul>
+</li>
+<li>自动化<ul>
+<li>虽然自动化非常棒。但不要陷入一开始就要把所有东西自动化的陷阱里。</li>
+<li>自动化不是最高优先级的，你需要发布、交付、部署什么才是。</li>
+<li>当你有东西跑起来迭代起来是非常好的，但是开头从0到1，怎么开始。</li>
+<li>你想要一些管道，但作为原则，你需要在项目已开始就制定一些守则。</li>
+<li>不要浪费大量时间建立一个不可交付的管道。确保你有东西可以迭代。</li>
+<li>想象你所建立的产品。它能带给你什么？它能带给你的最核心价值是什么？不要添加任何你不需要的东西</li>
+<li>仅在真正需要的时候才进行自动化</li>
+<li>“你不想结束于成吨的技术债务”</li>
+<li>在没能力的时候，你可以花费大量的时间思索出这样的概念</li>
+<li>能否同步进行——想想跨职能需求等</li>
+<li>可扩展模型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>作为Tech Lead，这个项目中最让你害怕的事有哪些？<ul>
+<li>做些前瞻性的思考，按时间作为横轴列下风险点，但风险点临近时要当心了。</li>
+<li>这是风险管理的一部分内容</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p>文章整个读下来，应该是适合于大型的企业项目的，小项目小团队在项目开始时很多都不会考虑这么清楚的。不过很多的点都是非常值得学习、借鉴。</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a class="article-share-link" data-url="http://sezina.github.com/2018/05/19/The-Tech-Leads-New-Project-Checklist/" data-id="cjhd39una003of7icak1rg8i9" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsklEQVR42u3aS47jMAwFwNz/0t3ArHpj+5EUkwBTXgX52CotJOZRr1d8/fy78td/37n/fu/TwxceHh5ea+hX1/2Dk29WB5ff7X4keHh4eNu85DHVxfrU0l/9Jh4eHt738JJ69WpA+W/z++Ph4eF9P69X7FYTg/toAw8PD+97eEnEUIgAbodeLd+r48HDw8Pb5m00wLZff7i/h4eH9x/zfopXHhDkEUNUFvdGi4eHh7fAS/72J5HBJK6dRx4P2wYeHh7eUV7vD3++lFdbWflxrvvJfdj38PDw8Aa83uDyT3vHtnqRcaGkxsPDwxvzem2nOTs/KDCfaDw8PLyzvB6jOhGTln+Cf8ha8PDw8A7xkoB17/3kaEIeeeDh4eG9h1ctpvNG1CTYzQvr6MgCHh4e3lHepL2Ux7J5Kdxrj0X5NB4eHt5RXh4iVFtW1YX+1FPw8PDw9niTbSBf0Octrt6k4+Hh4W3zem2neVDba7ZVQ148PDy8U7y87dTbNqr37G0JlxY8PDy8BV7vwfPiuxqO5AV34X8DHh4eXovXW7irZXd1uc+n9QGJh4eH9yFeHljk28YkwsgPE+Dh4eFt85KBVgvuvPiebzPN5BgPDw+vxcs7Y73SNp+gV+u6vA8eHh7eGq8XwuZNrHwrmkxBdHQADw8Pb4139tBVlVo9uHB5Zzw8PLwFXvKHv3cUYFIuz0v8V55n4OHh4RV5SeRajQDyIwL56+Z04OHh4b2RV41i80MG+W8n7Tc8PDy8Pd6kzO0FBNW4dr5t4OHh4W3weqFDbyNJIuNqpPuw2eDh4eGt8ZK4IQ8aqtRTxXrUAMPDw8N7I69a2k7K6+qdH9pgeHh4eB/l5QVuTjobjow2Bjw8PLyYNymFJ+BTd7v8FA8PD2+BNzrYFCzWk6MD6509PDw8vBrvF1xLSt9OZg7tAAAAAElFTkSuQmCC">分享</a><div class="tags"><a href="/tags/工作/">工作</a><a href="/tags/程序开发/">程序开发</a><a href="/tags/管理/">管理</a></div><div class="post-nav"><a class="next" href="/2018/05/17/About-Diary-or-Journal/">关于日记 | About Diary or Journal</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'sezinagithubio';
+var disqus_identifier = '2018/05/19/The-Tech-Leads-New-Project-Checklist/';
+var disqus_title = '【译】Tech Lead的新项目检查清单 | The Tech Lead's New Project Checklist';
+var disqus_url = 'http://sezina.github.com/2018/05/19/The-Tech-Leads-New-Project-Checklist/';
+$('.btn_click_load').click(function() {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('.btn_click_load').css('display','none');
+});
+$.ajax({
+  url: 'https://disqus.com/next/config.json',
+  timeout: 3000,
+  type: 'GET',
+  success: (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    $('.btn_click_load').css('display','none');
+  })(),
+  error: function() {
+    $('.btn_click_load').css('display','block');
+  }
+});</script><script id="dsq-count-scr" src="//sezinagithubio.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://sezina.github.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Chitchat/">Chitchat</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/自我管理/" style="font-size: 15px;">自我管理</a> <a href="/tags/Phabricator/" style="font-size: 15px;">Phabricator</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/Maven/" style="font-size: 15px;">Maven</a> <a href="/tags/Tomcat/" style="font-size: 15px;">Tomcat</a> <a href="/tags/OS-X/" style="font-size: 15px;">OS X</a> <a href="/tags/LeetCode/" style="font-size: 15px;">LeetCode</a> <a href="/tags/Algorithm/" style="font-size: 15px;">Algorithm</a> <a href="/tags/心智/" style="font-size: 15px;">心智</a> <a href="/tags/书/" style="font-size: 15px;">书</a> <a href="/tags/阅读/" style="font-size: 15px;">阅读</a> <a href="/tags/展望/" style="font-size: 15px;">展望</a> <a href="/tags/总结/" style="font-size: 15px;">总结</a> <a href="/tags/工作/" style="font-size: 15px;">工作</a> <a href="/tags/Code-review/" style="font-size: 15px;">Code review</a> <a href="/tags/生活/" style="font-size: 15px;">生活</a> <a href="/tags/财务/" style="font-size: 15px;">财务</a> <a href="/tags/证券/" style="font-size: 15px;">证券</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/成长/" style="font-size: 15px;">成长</a> <a href="/tags/ACG/" style="font-size: 15px;">ACG</a> <a href="/tags/动漫/" style="font-size: 15px;">动漫</a> <a href="/tags/翻译/" style="font-size: 15px;">翻译</a> <a href="/tags/Stack-Overflow/" style="font-size: 15px;">Stack Overflow</a> <a href="/tags/程序开发/" style="font-size: 15px;">程序开发</a> <a href="/tags/管理/" style="font-size: 15px;">管理</a> <a href="/tags/旅游/" style="font-size: 15px;">旅游</a> <a href="/tags/日本/" style="font-size: 15px;">日本</a> <a href="/tags/断离舍/" style="font-size: 15px;">断离舍</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/19/The-Tech-Leads-New-Project-Checklist/">【译】Tech Lead的新项目检查清单 | The Tech Lead's New Project Checklist</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/17/About-Diary-or-Journal/">关于日记 | About Diary or Journal</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/16/The-100-Thing-Challenge/">生活必需物品100件|The 100 Thing Challenge</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/14/travel-in-tokyo-senji/">东京7日游之圣地巡礼</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/12/work-intensity-in-software-project/">软件开发团队的工作紧张度</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/developer-notices/">今日份的开发注意事项</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/how-does-stack-overflow-do-pagination/">【译】Stackoverflow是如何做分页的？(How does Stack Overflow do pagination?)</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/travel-in-tokyo/">东京7日游小记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/31/at-the-end-of-2017/">写在2017最后一天</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/29/bangumi-recommendation-3/">近年来看过的一些不错的动漫（3）</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//sezinagithubio.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://github.com/sezina/" title="Github" target="_blank">Github</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Sezina.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
