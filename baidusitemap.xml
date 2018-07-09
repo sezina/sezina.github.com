@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://blog.sezina.io/2018/07/09/201807-book-list/</loc>
+    <lastmod>2018-07-09T03:18:11.076Z</lastmod>
+    <data>
+        <display>
+        <title>2018年7月购书单</title>
+        <pubTime>2018-07-09T04:16:40.000Z</pubTime>
+        
+        <tag>阅读</tag>
+         
+        <tag>书籍</tag>
+         
+         
+           
+             
+              <breadCrumb title="Chitchat" url="https://blog.sezina.io/categories/Chitchat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://blog.sezina.io/2018/07/05/10-Books-Java-Developers-Should-Read-in-2018/</loc>
     <lastmod>2018-07-05T04:29:09.267Z</lastmod>
     <data>
@@ -15,9 +37,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>JAVA</tag>
-         
         <tag>书籍</tag>
+         
+        <tag>JAVA</tag>
          
          
            
