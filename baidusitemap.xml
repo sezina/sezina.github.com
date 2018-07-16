@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://blog.sezina.io/2018/07/16/summer-drink/</loc>
+    <lastmod>2018-07-16T07:36:07.013Z</lastmod>
+    <data>
+        <display>
+        <title>夏日饮品</title>
+        <pubTime>2018-07-16T11:28:10.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+         
+           
+             
+              <breadCrumb title="Chitchat" url="https://blog.sezina.io/categories/Chitchat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://blog.sezina.io/2018/07/09/201807-book-list/</loc>
     <lastmod>2018-07-10T02:21:00.261Z</lastmod>
     <data>
@@ -540,9 +560,9 @@
         <title>写在2016伊始</title>
         <pubTime>2016-01-10T15:30:24.000Z</pubTime>
         
-        <tag>展望</tag>
-         
         <tag>总结</tag>
+         
+        <tag>展望</tag>
          
          
            
