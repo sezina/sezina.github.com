@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>https://www.sezina.io/2018/08/20/201808-book-list/</loc>
+    <lastmod>2018-08-20T15:04:21.407Z</lastmod>
+    <data>
+        <display>
+        <title>2018年8月购书单</title>
+        <pubTime>2018-08-20T14:59:39.000Z</pubTime>
+        
+        <tag>阅读</tag>
+         
+        <tag>书籍</tag>
+         
+         
+           
+             
+              <breadCrumb title="Chitchat" url="https://www.sezina.io/categories/Chitchat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://www.sezina.io/2018/07/16/about-recruitment/</loc>
@@ -84,9 +106,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>JAVA</tag>
-         
         <tag>书籍</tag>
+         
+        <tag>JAVA</tag>
          
          
            
@@ -586,9 +608,9 @@
         <title>写在2016伊始</title>
         <pubTime>2016-01-10T15:30:24.000Z</pubTime>
         
-        <tag>展望</tag>
-         
         <tag>总结</tag>
+         
+        <tag>展望</tag>
          
          
            
@@ -734,11 +756,11 @@
         <title>读《奇特的一生》</title>
         <pubTime>2013-12-12T06:16:00.000Z</pubTime>
         
+        <tag>自我管理</tag>
+         
         <tag>书</tag>
          
         <tag>阅读</tag>
-         
-        <tag>自我管理</tag>
          
          
            
@@ -758,11 +780,11 @@
         <title>The Road Less Travelled 摘录</title>
         <pubTime>2013-12-08T07:02:00.000Z</pubTime>
         
-        <tag>心智</tag>
-         
         <tag>书</tag>
          
         <tag>阅读</tag>
+         
+        <tag>心智</tag>
          
          
            
