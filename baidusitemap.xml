@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>https://www.sezina.io/2018/10/18/reverse-SSH-tunneling/</loc>
+    <lastmod>2018-10-18T03:24:01.148Z</lastmod>
+    <data>
+        <display>
+        <title>转--使用SSH反向隧道进行内网穿透</title>
+        <pubTime>2018-10-18T04:17:38.000Z</pubTime>
+        
+        <tag>SSH</tag>
+         
+        <tag>内网穿透</tag>
+         
+        <tag>反向隧道</tag>
+         
+        <tag>运维</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tech" url="https://www.sezina.io/categories/Tech/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>https://www.sezina.io/2018/08/20/201808-book-list/</loc>
     <lastmod>2018-08-20T15:04:21.407Z</lastmod>
     <data>
@@ -24,7 +51,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://www.sezina.io/2018/07/16/about-recruitment/</loc>
@@ -106,9 +132,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>书籍</tag>
-         
         <tag>JAVA</tag>
+         
+        <tag>书籍</tag>
          
          
            
@@ -608,9 +634,9 @@
         <title>写在2016伊始</title>
         <pubTime>2016-01-10T15:30:24.000Z</pubTime>
         
-        <tag>总结</tag>
-         
         <tag>展望</tag>
+         
+        <tag>总结</tag>
          
          
            
