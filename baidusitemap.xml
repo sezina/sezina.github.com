@@ -3,6 +3,32 @@
 
 
     
+  <url>
+    <loc>https://www.sezina.io/2018/11/09/excerpt-of-insight/</loc>
+    <lastmod>2018-11-09T07:44:03.743Z</lastmod>
+    <data>
+        <display>
+        <title>《见识》摘录</title>
+        <pubTime>2018-11-09T07:41:13.000Z</pubTime>
+        
+        <tag>书</tag>
+         
+        <tag>阅读</tag>
+         
+        <tag>成长</tag>
+         
+        <tag>认知</tag>
+         
+         
+           
+             
+              <breadCrumb title="Reading" url="https://www.sezina.io/categories/Reading/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://www.sezina.io/2018/10/18/reverse-SSH-tunneling/</loc>
@@ -132,9 +158,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>JAVA</tag>
-         
         <tag>书籍</tag>
+         
+        <tag>JAVA</tag>
          
          
            
@@ -634,9 +660,9 @@
         <title>写在2016伊始</title>
         <pubTime>2016-01-10T15:30:24.000Z</pubTime>
         
-        <tag>总结</tag>
-         
         <tag>展望</tag>
+         
+        <tag>总结</tag>
          
          
            
