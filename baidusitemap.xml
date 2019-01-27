@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>https://www.sezina.io/2019/01/27/2018-me-2019/</loc>
+    <lastmod>2019-01-27T03:52:54.037Z</lastmod>
+    <data>
+        <display>
+        <title>2018 我 2019</title>
+        <pubTime>2019-01-27T03:52:02.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+         
+           
+             
+              <breadCrumb title="Chitchat" url="https://www.sezina.io/categories/Chitchat/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.sezina.io/2018/11/16/acoustic-guitar-notes-tuning-index/</loc>
-    <lastmod>2018-12-19T08:46:34.940Z</lastmod>
+    <lastmod>2018-12-19T12:31:14.052Z</lastmod>
     <data>
         <display>
         <title>指弹吉他笔记 -- 吉他调弦索引</title>
@@ -214,9 +234,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>JAVA</tag>
-         
         <tag>书籍</tag>
+         
+        <tag>JAVA</tag>
          
          
            
@@ -864,11 +884,11 @@
         <title>读《奇特的一生》</title>
         <pubTime>2013-12-12T06:16:00.000Z</pubTime>
         
+        <tag>自我管理</tag>
+         
         <tag>书</tag>
          
         <tag>阅读</tag>
-         
-        <tag>自我管理</tag>
          
          
            
@@ -888,11 +908,11 @@
         <title>The Road Less Travelled 摘录</title>
         <pubTime>2013-12-08T07:02:00.000Z</pubTime>
         
-        <tag>心智</tag>
-         
         <tag>书</tag>
          
         <tag>阅读</tag>
+         
+        <tag>心智</tag>
          
          
            
