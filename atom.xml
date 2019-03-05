@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sezina.io/"/>
-  <updated>2019-01-27T03:52:54.037Z</updated>
+  <updated>2019-03-05T15:50:05.285Z</updated>
   <id>https://www.sezina.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JAVA中如何将图片读取成Base64</title>
+    <link href="https://www.sezina.io/2019/03/05/how-to-read-image-as-base64-in-java/"/>
+    <id>https://www.sezina.io/2019/03/05/how-to-read-image-as-base64-in-java/</id>
+    <published>2019-03-05T15:49:15.000Z</published>
+    <updated>2019-03-05T15:50:05.285Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">base64</span><span class="params">(String imgFile)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    File file = <span class="keyword">new</span> File(imgFile);</span><br><span class="line">    <span class="keyword">try</span> (FileInputStream fis = <span class="keyword">new</span> FileInputStream(imgFile)) &#123;</span><br><span class="line">        <span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[(<span class="keyword">int</span>) file.length()];</span><br><span class="line">        fis.read(bytes);</span><br><span class="line">        String base64 = <span class="keyword">new</span> String(Base64.getEncoder().encode(bytes), StandardCharsets.UTF_8);</span><br><span class="line">        <span class="keyword">return</span> base64;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+      <category term="Tech" scheme="https://www.sezina.io/categories/Tech/"/>
+    
+    
+      <category term="JAVA" scheme="https://www.sezina.io/tags/JAVA/"/>
+    
+      <category term="技术" scheme="https://www.sezina.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA中如何将Base64保存成图片</title>
+    <link href="https://www.sezina.io/2019/03/05/how-to-save-image-from-base64-in-java/"/>
+    <id>https://www.sezina.io/2019/03/05/how-to-save-image-from-base64-in-java/</id>
+    <published>2019-03-05T15:44:31.000Z</published>
+    <updated>2019-03-05T15:48:21.260Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> String <span class="title">saveImg</span><span class="params">(String base64Img)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    String imgFile = <span class="string">"test.jpg"</span>;</span><br><span class="line">    <span class="keyword">try</span> (FileOutputStream fos = <span class="keyword">new</span> FileOutputStream(imgPath)) &#123;</span><br><span class="line">        <span class="keyword">byte</span>[] imageData = Base64.getDecoder().decode(base64Img);</span><br><span class="line">        fos.write(imageData);</span><br><span class="line">        fos.flush();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> imgPath;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+      <category term="Tech" scheme="https://www.sezina.io/categories/Tech/"/>
+    
+    
+      <category term="JAVA" scheme="https://www.sezina.io/tags/JAVA/"/>
+    
+      <category term="技术" scheme="https://www.sezina.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>2018 我 2019</title>
@@ -583,60 +637,6 @@
       <category term="翻译" scheme="https://www.sezina.io/tags/%E7%BF%BB%E8%AF%91/"/>
     
       <category term="Stack Overflow" scheme="https://www.sezina.io/tags/Stack-Overflow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>东京7日游小记</title>
-    <link href="https://www.sezina.io/2018/05/06/travel-in-tokyo/"/>
-    <id>https://www.sezina.io/2018/05/06/travel-in-tokyo/</id>
-    <published>2018-05-06T09:15:32.000Z</published>
-    <updated>2018-05-06T14:27:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>新年放假前两周，得知爸妈新年来广州，因此我过年不用回家，于是决定过年去心心念念多年的日本玩一玩，综合自己的假期时长和预算等各种原因，最后决定了在东京玩7天（2月10日～19日，前后的两天在路上）。<br>游记拖着拖着也不怎么想写了，就用简短的文字，散散的做做总结说说感受吧。</p><ul><li>单次旅行签证加急5个工作日出签，只要你是个正常的没污点的人，一般不会卡你。毕竟人家需要中国人买买买。</li><li>尽早确定机票，不要像我这样心血来潮，这样可以省下好几千。目前我听过从广州去的最便宜的是888。</li><li>如果没有提前买机票，国内飞日本最便宜的应该是上海。在广东的方便的话从香港飞，比广州飞便宜很多。</li><li>日本的交通很贵很贵，我给西瓜卡充了7500日元（包括买卡时的1500），地铁随随便便就坐掉几百日元，印象中最便宜的一次是160日元。去的时候，坐机场大巴从羽田机场到六本木花了2060日元。回来时去成田机场，由于时间比较紧坐京成特急Skyliner花了2000，这是从东京到成田机场最快的交通方式；如果时间不急可以选择稍微慢点的，最多可以省一半。</li><li>去镰仓的话，买镰仓一日游券，从新宿出发，一日内随意来回、坐江之电，成人票价1470日元。</li><li>镰仓其实一天不够逛。我这次去大部分时间花在了江之岛上了，导致镰仓的其他地方不够逛，只在“小町通り”逛了逛，看天色开始暗下来了就开始往东京回了。</li><li>日本的地铁不像国内的可以直接站内换乘，经常需要出检票口，换另一个检票口进。</li><li>日本地铁很少有隔离门，跳轨好简单，所以坐车时经常看到电子公告说哪条线因人身事故暂停运营。还好那几天没有和人身事故撞个正着。</li><li>日本的街道非常干净，我也经历了一次找不到垃圾桶的尴尬。垃圾分类也非常严格，找到垃圾桶后，又经历了一次不知道该丢进哪个桶的尴尬。</li><li>Airbnb上可以找到住得很舒服的地方，我订的是公寓式的，提供了各种生活所需，房东还贴心的提供了移动wifi。公寓有公共的洗衣机和烘干机，所以我只需带2套换洗衣服。到那边去便利店买了两小袋洗衣液就行。</li><li>我住在六本木站边上，感觉是个非常好的位置，离各区玩的地方算是一个很中心的位置。</li><li>日本的便利店几乎可以搞定生活的方方面面。711、全家、罗森这些，跟国内的差别太大了，关东煮、便当很好吃，咖啡很好喝。还有各种面包、布丁、水果等等。一日3餐在这搞定都没问题。</li><li>日本便利店有黄书是真的，不过不是每间都有，那几天买过东西的那么多家大概有三分之一有。</li><li>日本可以说是个现金社会，准备个零钱包放硬币是个很好的做法，我没准备，把硬币都塞钱包了，搞得钱包特别鼓。注意买东西找回散钱时，把100、5日元的硬币留下来一些，非常有用。公用洗衣机、烘干机只能用100日元的硬币。5日元的是用于神社参拜，“5元”和“有缘”日语谐音，敬献5元的硬币就等于“和神建立了缘分”。一个换100元硬币的好地方：秋叶原的扭蛋店，一般会有一天给人换硬币的机器。</li><li>松本清这种热门游客店，一般会有会中文的店员（学中文的日本人、留学生、华侨等），买买买不怕沟通障碍。大型商场一般每层都会配有中文翻译，有明显的身份标识很容易找到，比如红色的着装、特殊的胸卡之类的，买买买同样不用担心沟通障碍。</li><li>东京大的地铁站跟商圈融合得比较紧，人流量大、结构复杂，如东京站、新宿站。去新宿站买镰仓一日券时，看着地图也完全找不着北，只好用仅会的少量日语问路找到了服务台。</li><li>日本的空间利用度确实很高，商业街的建筑地上七八层、地下一两层，一层一个店，有些建筑的店面宽度也就一两个车位的宽度。</li><li>想买正版av很容易，平均下来几乎每天都能见到一间专门卖这个的店。</li><li>秋叶原有栋绿色的建筑，专门卖各种情趣用品的。</li><li>如果打算深度游，还是要会些日语才行，因为真正能感受日本人情风味是那些街头巷尾的小餐馆，店家可能不会英语，菜单可能只有日文的。一个很尴尬的经历：在惠比寿附近，进了一家看起来很不错的咖啡厅，我和店员说着两种英语，最后只能说句“非常抱歉”逃了。</li><li>“すみません”是句必备常用语，不要简单翻译成道歉语”对不起“，虽然它有这个意思。其实大部分情况下，它相当于中文的“麻烦一下”、“不好意思”、或是招呼服务员时的“美女”“靓仔”。</li><li>注意日本是左行。电梯靠左站。关于这点，上扶梯时，日本人真的是规矩的靠左站，右边都让给赶路的人。</li><li>3、4月份看樱花，6、7月份看紫阳花。</li><li>新宿御苑如果是去圣地巡礼的话，请在雨季去，不然跟《言叶之庭》对比后会非常失望，东京的气候决定了那里秋冬时期会光秃秃的。</li><li>喜欢看各种展的人，需要给上野公园留出一整天的时间，因为那一圈有博物馆、美术馆等各种展馆，加上动物园和上野公园本身，一整天可能不一定够。在三四个场馆闭馆的情况下，我都逛到了下午两点多。</li><li>皇居附近也是看展的好地方，有多个美术馆、科技馆。</li><li>神保町是爱书之人的好去处，整条街都是书店。对了，喜欢ACG的熟知的集英社、小学馆等都在那一片。</li><li>吃货可以在筑地市场吃一天。玉子烧、生蚝、各种海鲜。。。极其鲜美，这次旅程的一大遗憾便是没有吃多一次。</li><li>台场的富士电视台的扶梯是我目前见过最长的扶梯，站上去背脊感觉凉飕飕的不敢往回看。</li><li>对于喜欢动漫的人，圣地巡礼是个规划行程非常好的方式。</li><li>热门景点的中国人和韩国人非常多。</li><li>神田明神神社的巫女服非常漂亮。</li><li>日本的音乐非常普及，很容易找到乐器店，地铁上经常能看到带乐器的人。</li><li>日本的店里不要随便拍照，最好问一下能否拍照，有些店家很不乐意。</li><li>东京赏樱的好地方：新宿御苑，目黑川。因为太好，人也多。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;新年放假前两周，得知爸妈新年来广州，因此我过年不用回家，于是决定过年去心心念念多年的日本玩一玩，综合自己的假期时长和预算等各种原因，最后决定了在东京玩7天（2月10日～19日，前后的两天在路上）。&lt;br&gt;游记拖着拖着也不怎么想写了，就用简短的文字，散散的做做总结说说感受吧。
-      
-    
-    </summary>
-    
-      <category term="Chitchat" scheme="https://www.sezina.io/categories/Chitchat/"/>
-    
-    
-      <category term="生活" scheme="https://www.sezina.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="旅游" scheme="https://www.sezina.io/tags/%E6%97%85%E6%B8%B8/"/>
-    
-      <category term="日本" scheme="https://www.sezina.io/tags/%E6%97%A5%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>写在2017最后一天</title>
-    <link href="https://www.sezina.io/2017/12/31/at-the-end-of-2017/"/>
-    <id>https://www.sezina.io/2017/12/31/at-the-end-of-2017/</id>
-    <published>2017-12-31T03:41:32.000Z</published>
-    <updated>2017-12-31T03:43:13.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>昨天公历生日，老友葱头过来陪了一天，可惜了，我前两天刚拔完智齿，不能嚼东西，只能吃些软软的食物，拉着他喝了一天粥。昨天下午跑去看了《寻梦环游记》，非常不错的一部电影，感动哭了。里面的Remember me我想用吉他弹出来。看完逛了会书店就回来了，然后吃了个很贵的巧克力提拉米苏，算是生日蛋糕吧，见识到了什么叫做糖分炸弹。生日也就基本这样了。哦，对了，老爸发来6.66的红包，老妈发了8.88，亲爸亲妈啊～</p><p>惯例的，这个时候都是要总结一下过去一年然后展望下一年的。先看看去年对2017展望是怎样的。</p><pre><code>1. 真的要考过日语N1。7月份。</code></pre><p>这个废了，今年完全没怎么抽时间学日语。</p><pre><code>2. 写作，不多，先从每月1篇开始吧。</code></pre><p>加上本篇是5篇。</p><pre><code>3. 坚持运动，全年累计的跑步路程到达800KM。算一下每次8KM，需要100次，也就平均每周2次的水平。不过这安排得太满了，出去天气、身体等等各种因素，大概会在650～700KM之间。</code></pre><p>这个非常遗憾，今年诸事不顺。身体状况也不怎么好，一开年就身体不好休息了一段时间，后面接着加班等事又抽不出时间来锻炼。不过也想办法在室内做些运动，总比什么都不做好。</p><pre><code>4. 阅读，老样子，多读经典。需要注意平衡技术与非技术的比例，2016年读的大部分书都是非技术的，作为一个技术人员，有点惭愧。2016年读了25本，那2017就读个37本吧，1.5倍。</code></pre><p>天真了，加班累到不行时最想做的是放空。</p><pre><code>5. 继续玩指弹，打算每月一首的，打个折购就是全年10首，目前已确定的有《流行的云》《Life is Like a Boat》。当然已经会弹的两首不能丢，练熟，现在3、4月份的时候录制放到网上。</code></pre><p>低估了学习指弹的难度，高估了自己。</p><pre><code>6. 继续排个旅行的目标在这吧。</code></pre><p>去过其他城市几次，不过都是因为出差。</p><p>哈哈哈，2017年规划没一个完成了的。每个都有走出那么一段路也还算不错。</p><hr><p>那么稍微总结一下自己的2017吧。</p><h3 id="健康"><a href="#健康" class="headerlink" title="健康"></a>健康</h3><p>今年简直是我的健康大纪年。一开年就肠胃不适、胃功能紊乱；接着又是吃了不该吃的东西，很长一段时间的肠胃不舒服。直接导致的一个问题时，不敢去跑步，运动量剧减。酒也少喝了，饮食也清淡了很多。<br>年中时，坏掉的牙齿突然痛了，赶紧去看；一检查发现好几颗牙齿都有问题了，于是乎，今年时不时往牙医那跑，到现在已经2颗根管治疗，拔掉2颗智齿了，还有1颗智齿要拔，可能1颗根管治疗。<br>前两个月体检，大部分指标正常，但偏胖、血脂偏高。</p><h3 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h3><p>全年20本不到，比去年还少，有点说不出的郁闷。书读的不多，但好书还是有几本。<br><strong>《精力管理》</strong>：颠覆了我之前对时间管理的观念，时间管理是个伪概念，真正管理的应该是自己的精力。<br><strong>《动物农场》</strong>：观察当下发生的一些事。<br><strong>《刀锋》</strong><br><strong>《月亮与六便士》</strong><br><strong>《财富自由之路》</strong><br><strong>《刻意练习》</strong><br><strong>《这才是心理学》</strong></p><h3 id="吉他"><a href="#吉他" class="headerlink" title="吉他"></a>吉他</h3><p>开年经历了一段厌倦期，年中重新拾起，慢慢的现在养成了每天练练的习惯，技艺也在不断进步。可以弹下《风之诗》了，虽然不是很纯熟。正在练新曲子。去年天真的以为自己能每月一首练出来的，其实没那么简单。</p><h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>工作上，title换了个业务线负责人，关注的东西不再是以前的代码细节，上到市场业务层面，开头做到不好，这也是导致今年有段时间加班严重的原因。后面半年变得越来越顺了。</p><p>感觉2017，自己也就这些事可以说说了。</p><hr><p>那就看看2018的展望吧。</p><h3 id="健康、运动"><a href="#健康、运动" class="headerlink" title="健康、运动"></a>健康、运动</h3><p>运动室内室外相结合，跑步里程积累希望过500KM，体重降到130以下，低油低热量饮食，注意牙齿健康。大致这些吧。很泛。<br>不求长命百岁，但求活着的时候健健康康。</p><h3 id="阅读-1"><a href="#阅读-1" class="headerlink" title="阅读"></a>阅读</h3><p>阅读是对自己最便宜的投资。对自己还是有点追求的50本。<br>已在reading list中的：<br>《深度工作》<br>《精益创业》<br>《黑天鹅》<br>《反脆弱》<br>《人生的枷锁》<br>《孤独六讲》<br>《亲密关系》<br>《心理学与生活》<br>《双城记》<br>《决策与判断》<br>《影响力》<br>《先发影响力》<br>《爱情笔记》<br>等。</p><h3 id="日语"><a href="#日语" class="headerlink" title="日语"></a>日语</h3><p>这个还是放到规划上，一直想学好的。过N2.</p><h3 id="吉他-1"><a href="#吉他-1" class="headerlink" title="吉他"></a>吉他</h3><p>说实话，没老师带，我也不知道该规划到什么程度，先把手中能学的都学了吧，争取自己录两个视频放到网上。</p><h3 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h3><p>今年尝试上架一款side project做出来的App。</p><p>非常重要的一点：<strong>继续寻找能让我躺着挣钱的方法。</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;昨天公历生日，老友葱头过来陪了一天，可惜了，我前两天刚拔完智齿，不能嚼东西，只能吃些软软的食物，拉着他喝了一天粥。昨天下午跑去看了《寻梦环游记》，非常不错的一部电影，感动哭了。里面的Remember me我想用吉他弹出来。看完逛了会书店就回来了，然后吃了个很贵的巧克力提拉米
-      
-    
-    </summary>
-    
-      <category term="Chitchat" scheme="https://www.sezina.io/categories/Chitchat/"/>
-    
-    
-      <category term="生活" scheme="https://www.sezina.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
