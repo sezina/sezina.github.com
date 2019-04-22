@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sezina.io/"/>
-  <updated>2019-03-05T15:50:05.285Z</updated>
+  <updated>2019-04-22T09:37:31.545Z</updated>
   <id>https://www.sezina.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.sezina.io/2019/03/05/how-to-read-image-as-base64-in-java/"/>
     <id>https://www.sezina.io/2019/03/05/how-to-read-image-as-base64-in-java/</id>
     <published>2019-03-05T15:49:15.000Z</published>
-    <updated>2019-03-05T15:50:05.285Z</updated>
+    <updated>2019-04-22T09:37:31.545Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">base64</span><span class="params">(String imgFile)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    File file = <span class="keyword">new</span> File(imgFile);</span><br><span class="line">    <span class="keyword">try</span> (FileInputStream fis = <span class="keyword">new</span> FileInputStream(imgFile)) &#123;</span><br><span class="line">        <span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[(<span class="keyword">int</span>) file.length()];</span><br><span class="line">        fis.read(bytes);</span><br><span class="line">        String base64 = <span class="keyword">new</span> String(Base64.getEncoder().encode(bytes), StandardCharsets.UTF_8);</span><br><span class="line">        <span class="keyword">return</span> base64;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -41,6 +41,8 @@
     
       <category term="技术" scheme="https://www.sezina.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
+      <category term="How To" scheme="https://www.sezina.io/tags/How-To/"/>
+    
   </entry>
   
   <entry>
@@ -48,7 +50,7 @@
     <link href="https://www.sezina.io/2019/03/05/how-to-save-image-from-base64-in-java/"/>
     <id>https://www.sezina.io/2019/03/05/how-to-save-image-from-base64-in-java/</id>
     <published>2019-03-05T15:44:31.000Z</published>
-    <updated>2019-04-19T03:47:53.017Z</updated>
+    <updated>2019-04-22T09:37:25.669Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> String <span class="title">saveImg</span><span class="params">(String base64Img)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    String imgFile = <span class="string">"test.jpg"</span>;</span><br><span class="line">    <span class="keyword">try</span> (FileOutputStream fos = <span class="keyword">new</span> FileOutputStream(imgFile)) &#123;</span><br><span class="line">        <span class="keyword">byte</span>[] imageData = Base64.getDecoder().decode(base64Img);</span><br><span class="line">        fos.write(imageData);</span><br><span class="line">        fos.flush();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> imgFile;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -67,6 +69,8 @@
       <category term="JAVA" scheme="https://www.sezina.io/tags/JAVA/"/>
     
       <category term="技术" scheme="https://www.sezina.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="How To" scheme="https://www.sezina.io/tags/How-To/"/>
     
   </entry>
   
@@ -407,9 +411,9 @@
     
       <category term="程序开发" scheme="https://www.sezina.io/tags/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
     
-      <category term="JAVA" scheme="https://www.sezina.io/tags/JAVA/"/>
-    
       <category term="书籍" scheme="https://www.sezina.io/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+      <category term="JAVA" scheme="https://www.sezina.io/tags/JAVA/"/>
     
   </entry>
   
