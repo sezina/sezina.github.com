@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sezina.io/"/>
-  <updated>2019-05-16T13:56:17.875Z</updated>
+  <updated>2019-05-16T17:17:42.103Z</updated>
   <id>https://www.sezina.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>说说读书</title>
+    <link href="https://www.sezina.io/2019/05/17/about-reading/"/>
+    <id>https://www.sezina.io/2019/05/17/about-reading/</id>
+    <published>2019-05-16T17:04:27.000Z</published>
+    <updated>2019-05-16T17:17:42.103Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/images/about_reading/book_world.jpg" title="图 动漫《狗与剪刀的正确用法》"><p><em>截图自动漫《狗与剪刀的正确用法》</em></p><p>买书如山倒，读书如抽丝。我的房子正在向配图的方向进化。</p><p>每次亚马逊搞满减活动，我都会囤书。（最近传亚马逊有部分业务要退出中国，不知道对图书影响大不）<br>我喜欢那种想读书时随手一捞就有书可读的环境。忘了在哪里看到的一个说法，一个爱读书的人，买书的速度一定是比他看书的速度快，这样他才不会陷入找不到读的窘境。我现在就不会陷入这样的窘境，书架完全不够用了，就差伸手就能够到书了。</p><p>买书如山倒，读书如抽丝的另外一个原因，是我读书的速度比较慢。我非常羡慕那些看书超快，且依然能提炼书中观点产出读书笔记或心得的人。曾经向人请教这方面的问题，比较一致的看法是：书读的不够多，读书越多就读的越快，是一个量变到质变的过程。身边有一位就是这种越看越快的例子。</p><h2 id="实体书or电子书"><a href="#实体书or电子书" class="headerlink" title="实体书or电子书"></a>实体书or电子书</h2><p>这是个非常有趣话题，在网上经常看到有网友问些大v看实体书还是电子书好。<br>从个人喜好上，我喜欢实体的纸质书，在家里我一般都是看纸质书，往往一杯咖啡（或茶）、一支笔、一本书，坐在客厅或阳台边上看起来，远离各种电子设备。<br>我也看电子书。之前有个Kindle，后来嫌占空间给了我弟，最近又有点想入手一个，哈哈。iPhone、iPad上也装了Kindle的App。Mac上也有Kindle，还有iBook。主要是为了出门在外、通勤路上看书，或是看一些浏览性质的书，或是看一下需要方便我做电子记录的书。</p><h2 id="读什么书？"><a href="#读什么书？" class="headerlink" title="读什么书？"></a>读什么书？</h2><p>有人说踏入社会了只读对工作有用的书，有人说读书不能太功利了。</p><blockquote><p>读史使人明智，读诗使人灵秀，数学使人周密，科学使人深刻，伦理学使人庄重，逻辑修辞之学使人善辩：凡有所学，皆成性格。—— 培根《谈读书》</p></blockquote><p>对工作有用的书要读，这些书可以让你更专业精深，助力工作；和工作不相关的书也要读，这些书可以开阔视野，为躁动的心带来宁静。</p><p>引一段在动漫中看到的关于读书的看法：</p><blockquote><p>看书不单是读取文字，同时是调整自己的工具。在状态不好的时候会有都不进书的情况出现，这个时候就该考虑妨碍读书的因素。有些书即便在状态不好的时候看，其内容也能源源不断地钻进你的大脑。思考为何会如此，就好像精神上的调律，类似调音，调律时的重点在于，手指触摸纸张时的感觉，和不停翻阅书籍时给予大脑瞬间性刺激的东西。—— 动漫《Psycho Pass》</p></blockquote><h2 id="关于读书的书"><a href="#关于读书的书" class="headerlink" title="关于读书的书"></a>关于读书的书</h2><p>最后分享一些关于读书的书：</p><p>《书都不会读，你还想成功》：用一个成功故事说明读书的重要性，劝导人们读书。<br>《书读完了》：如何读书。<br>《如何阅读一本书》：学会读书。<br>《为什么读经典》<br>《巨匠与写作》</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;img src=&quot;/images/about_reading/book_world.jpg&quot; title=&quot;图 动漫《狗与剪刀的正确用法》&quot;&gt;
+&lt;p&gt;&lt;em&gt;截图自动漫《狗与剪刀的正确用法》&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;买书如山倒，读书如抽丝。我的房子正在向配图的方向进化。&lt;/p&gt;
+      
+    
+    </summary>
+    
+      <category term="Chitchat" scheme="https://www.sezina.io/categories/Chitchat/"/>
+    
+    
+      <category term="阅读" scheme="https://www.sezina.io/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>合理的数据库连接池大小设置</title>
@@ -613,36 +640,6 @@
       <category term="程序开发" scheme="https://www.sezina.io/tags/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
     
       <category term="管理" scheme="https://www.sezina.io/tags/%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>今日份的开发注意事项</title>
-    <link href="https://www.sezina.io/2018/05/11/developer-notices/"/>
-    <id>https://www.sezina.io/2018/05/11/developer-notices/</id>
-    <published>2018-05-10T22:54:54.000Z</published>
-    <updated>2018-05-22T14:56:08.606Z</updated>
-    
-    <content type="html"><![CDATA[<p>这篇文章主要是在带团队过程中积累下来的，一些用于新人培训的内容，和一些即便老人也会偶尔粗心犯错的内容。日后也会不断更新。</p><h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><ul><li>注意代码规范。参考：Google code style或阿里的Java开发手册。</li><li>日期格式化避免使用SimpleDateFormat类，该类是个线程不安全的类，具体请自行google之或研究该类的代码。用Java8新引入的DateTimeFormmater替代或引入jodatime包。</li><li>注意单例的正确写法。公司代码中的单例最常用的是双重检验锁的写法，如下</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">synchronized</span> (Singleton.class) &#123;</span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>底层依赖包避免平台依赖。如果确实需要配置平台参数，在项目中提供一个文档或适当的地方说明需要提供配置信息，由依赖方进行提供。比如core包是公司的一个基础依赖包，里面有一个类需要传递平台参数env进行初始化；app项目依赖core包，又刚好需要使用这个类，这个时候env应该配置在app的配置文件中而不应该在core包中。</li><li>使用json作为数据传输格式时，注意各json工具包对json字符串的长度限制。</li><li>后台程序的jvm启动参数中增加HeapDumpOnOutOfMemoryError参数。后台程序需要用到的heap size应该在测试环境中获得一个合理的预估。发生OOM后，从dump出来的heap信息分析是否有地方大量创建对象用完后又没有释放。</li><li>建议新人阅读<a target="_blank" href="https://amazon.cn/gp/product/B01ER75QC8/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B01ER75QC8&linkCode=as2&tag=sezina04-23&linkId=c15ce32711cc9c38a84262222f4d6d2b">《Java 8实战》</a>虽然现在都Java10，但这本书里讲的java8新引入的内容在开发过程中还是很有用的。<a target="_blank" href="https://amazon.cn/gp/product/B01ER75QC8/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B01ER75QC8&linkCode=as2&tag=sezina04-23&linkId=c15ce32711cc9c38a84262222f4d6d2b"><img border="0" src="//ws-cn.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=CN&ASIN=B01ER75QC8&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=sezina08-23"></a></li></ul><h2 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h2><ul><li>代码提交前，自己先review一遍代码，看看改动是否合理，是否有删错代码，是否有不该提交的内容。利用好IDEA代码提交节目的review功能。</li><li>不要忽略IDEA给的warning信息。</li><li>撰写良好的commit message，描述清楚本次提交。</li><li>非特定项目，无特殊情况，开发人员禁止向master分支提交代码，除非得到负责人要求或同意。</li></ul><h2 id="日常"><a href="#日常" class="headerlink" title="日常"></a>日常</h2><ul><li>注意文本编码问题。统一使用UTF-8！统一使用UTF-8！统一使用UTF-8！包括代码（注释）、常规文档、文件名等。这个是很多人不注意的地方，时常windows下编辑好到文件，在服务器或mac环境下就乱码了。</li><li>留意不可见字符！留意不可见字符！留意不可见字符！（遇到过文件名包含了不可见字符导致解析错误的bug）</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这篇文章主要是在带团队过程中积累下来的，一些用于新人培训的内容，和一些即便老人也会偶尔粗心犯错的内容。日后也会不断更新。&lt;/p&gt;
-&lt;h2 id=&quot;JAVA&quot;&gt;&lt;a href=&quot;#JAVA&quot; class=&quot;headerlink&quot; title=&quot;JAVA&quot;&gt;&lt;/a&gt;JAVA&lt;/
-      
-    
-    </summary>
-    
-      <category term="Tech" scheme="https://www.sezina.io/categories/Tech/"/>
-    
-    
-      <category term="Java" scheme="https://www.sezina.io/tags/Java/"/>
-    
-      <category term="工作" scheme="https://www.sezina.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="程序开发" scheme="https://www.sezina.io/tags/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
