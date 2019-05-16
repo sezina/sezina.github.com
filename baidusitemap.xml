@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://www.sezina.io/2019/05/16/about-pool-sizing/</loc>
+    <lastmod>2019-05-16T13:56:17.875Z</lastmod>
+    <data>
+        <display>
+        <title>合理的数据库连接池大小设置</title>
+        <pubTime>2019-05-16T13:54:04.000Z</pubTime>
+        
+        <tag>技术</tag>
+         
+        <tag>数据库</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tech" url="https://www.sezina.io/categories/Tech/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.sezina.io/2019/03/05/how-to-read-image-as-base64-in-java/</loc>
     <lastmod>2019-04-22T09:37:31.545Z</lastmod>
     <data>

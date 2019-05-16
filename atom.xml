@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sezina.io/"/>
-  <updated>2019-04-22T09:37:31.545Z</updated>
+  <updated>2019-05-16T13:56:17.875Z</updated>
   <id>https://www.sezina.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>合理的数据库连接池大小设置</title>
+    <link href="https://www.sezina.io/2019/05/16/about-pool-sizing/"/>
+    <id>https://www.sezina.io/2019/05/16/about-pool-sizing/</id>
+    <published>2019-05-16T13:54:04.000Z</published>
+    <updated>2019-05-16T13:56:17.875Z</updated>
+    
+    <content type="html"><![CDATA[<p>日常业务开发中，与数据库的交互大多通过数据库连接池进行。对于数据池连接池大小的设置，经常有人会犯理所当然的错误，即连接池越大、并发越高、数据库的吞吐量就越大、延迟或等待时间就越小。</p><p>数据库连接池大小要设置为多大才算合理的呢？<br>直接看一个公式：</p><blockquote><p>连接池大小 = ((cpu核心数 * 2) + 有效磁盘数)</p></blockquote><p>下面是这个公式解释：</p><blockquote><p>A formula which has held up pretty well across a lot of benchmarks for years is<br>that for optimal throughput the number of active connections should be somewhere<br>near ((core_count * 2) + effective_spindle_count). Core count should not include<br>HT threads, even if hyperthreading is enabled. Effective spindle count is zero if<br>the active data set is fully cached, and approaches the actual number of spindles<br>as the cache hit rate falls. … There hasn’t been any analysis so far regarding<br>how well the formula works with SSDs.</p></blockquote><p>建议细看连接池组件HikariCP项目wiki中关于数据库连接池大小的讨论：</p><p><a href="https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing" target="_blank" rel="noopener">https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing</a></p><p>这个wiki的中文翻译：</p><p><a href="https://mp.weixin.qq.com/s?__biz=MzU4MDUyMDQyNQ==&amp;mid=2247483806&amp;idx=1&amp;sn=0f6134e651cadbf03693992a642d5098" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MzU4MDUyMDQyNQ==&amp;mid=2247483806&amp;idx=1&amp;sn=0f6134e651cadbf03693992a642d5098</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;日常业务开发中，与数据库的交互大多通过数据库连接池进行。对于数据池连接池大小的设置，经常有人会犯理所当然的错误，即连接池越大、并发越高、数据库的吞吐量就越大、延迟或等待时间就越小。&lt;/p&gt;
+&lt;p&gt;数据库连接池大小要设置为多大才算合理的呢？&lt;br&gt;直接看一个公式：&lt;/p&gt;
+&lt;
+      
+    
+    </summary>
+    
+      <category term="Tech" scheme="https://www.sezina.io/categories/Tech/"/>
+    
+    
+      <category term="技术" scheme="https://www.sezina.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="数据库" scheme="https://www.sezina.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA中如何将图片读取成Base64</title>
@@ -614,33 +643,6 @@
       <category term="工作" scheme="https://www.sezina.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
       <category term="程序开发" scheme="https://www.sezina.io/tags/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【译】Stackoverflow是如何做分页的？(How does Stack Overflow do pagination?)</title>
-    <link href="https://www.sezina.io/2018/05/09/how-does-stack-overflow-do-pagination/"/>
-    <id>https://www.sezina.io/2018/05/09/how-does-stack-overflow-do-pagination/</id>
-    <published>2018-05-09T11:31:02.000Z</published>
-    <updated>2018-05-09T11:40:02.284Z</updated>
-    
-    <content type="html"><![CDATA[<p>原文是Stackoverflow上的一个<a href="https://meta.stackoverflow.com/questions/322164/how-does-stack-overflow-do-pagination" target="_blank" rel="noopener">问答</a>，解释stackoverflow在如此大数据量的情况下，如何在关系型数据库上做到如此快的翻页查询的。个人觉得能对我们日常开发工作带来一些思考，在这里将大意转译出来（非原文翻译）。</p><h2 id="问"><a href="#问" class="headerlink" title="问"></a>问</h2><p>stack overflow有上千万的问题，在翻页的时候，讲道理翻到后面时查询速度应该很慢才对。但stack overflow却很快。stack overflow是怎么做到分页查询这么快的？是缓存了所有热门问题并在应用层代码里排序吗？还是用了什么数据库黑魔法？</p><h2 id="答"><a href="#答" class="headerlink" title="答"></a>答</h2><p>【答者是Haney，Stackoverflow核心团队的一个工程经理】<br>整个过程是比较复杂的，我会在这里尝试回答清楚避免写一篇长到跟权利的游戏最后一次游戏一样长的博客【恕我直言，您这里的回答已经可以当作一篇博客了】。</p><h3 id="假设条件"><a href="#假设条件" class="headerlink" title="假设条件"></a>假设条件</h3><p>为了方便讨论，我们假定翻页是基于<code>pageNumber * pageSize</code>这个公式来做的。那么，“拿到当前的一组问题”就是一个对n个问题进行排序的问题了，也就可以通过偏移<code>pageNumber * pageSize</code>然后从这个位置拿<code>pageSize</code>个问题就是当前翻页的问题了。在我们的事例里，偏移量是<code>(pageNumber - 1) * pageSize</code>，因为第一页的<code>index</code>是<code>0</code>。</p><p>在排序上，你永远也不需要对这个数据集进行排序。实际上，你只需要对前面<code>pageNumber * pageSize</code>的数据进行完全排序，而对剩下的数据进行部分排序（例如3路快排）就可以拿到当前页的问题了。</p><p>还有比较重要的一点：开销最大是查询中间的页。拿到最前的n页和拿到最后的n页代价是一样的，因为只需要把排序条件调转就可以了。大部分的排序引擎（数据库、搜索引擎等）都支持了这种排序优化，包括我们的系统。</p><p>为了方便这里的讨论，下文中有些地方会用Post这个概念来代替问题。</p><h3 id="步骤一：标签引擎（Tag-Engine）"><a href="#步骤一：标签引擎（Tag-Engine）" class="headerlink" title="步骤一：标签引擎（Tag Engine）"></a>步骤一：标签引擎（Tag Engine）</h3><p>我们有个用.NET写的Tag Engine用来保存post的id和相关的元信息。你可以把它理解为倒排索引，你可以通过诸如创建时间、标签、来源等信息查到相应的post id。</p><p>这个Tag Engine基于图论的谓词（<code>Predicate</code>）逻辑。它通过在内存中对post id做集合操作（交集、并集等）来得到最后的结果。</p><p>我们向Tag Engine传递page number、page size和限定数据集大小的谓词逻辑进行查询。它会在内存里进行集合操作，然后对结果进行排序，最后返回满足条件的post id子集。</p><p>Tag Engine会缓存结果（大的集合，不仅仅缓存请求的那一页），并且基于查询条件（页码、每页大小、排序方式等）的hash值来快速在缓存中快速获得查询的结果。这大大提高了查询性能。</p><h3 id="步骤二：数据库"><a href="#步骤二：数据库" class="headerlink" title="步骤二：数据库"></a>步骤二：数据库</h3><p>Tag Engine并不缓存实际的问题数据，只存了id和元数据。我们通过类似如下的sql用ids来查询SQL数据库来拿回需要的数据。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Select</span> p.*, pm.ViewCount, u.Id, u.ProfileImageUrl, ...</span><br><span class="line"><span class="keyword">From</span> Posts p</span><br><span class="line">    <span class="keyword">Join</span> PostMetadata pm <span class="keyword">On</span> p.Id = pm.PostId</span><br><span class="line">    <span class="keyword">Left</span> <span class="keyword">Join</span> <span class="keyword">Users</span> u <span class="keyword">On</span> p.LastActivityUserId = u.Id</span><br><span class="line"><span class="keyword">Where</span> p.Id <span class="keyword">In</span> @Ids<span class="string">";</span></span><br></pre></td></tr></table></figure><p>这里的<code>@ids</code>是从上一步Tag Engine里获得的id列表。这样的查询拿回了用于展示的数据，但还没完。</p><h3 id="步骤三：半冗余内存内排序（Semi-Redundant-In-Memory-Sort）【翻译出来怪怪的】"><a href="#步骤三：半冗余内存内排序（Semi-Redundant-In-Memory-Sort）【翻译出来怪怪的】" class="headerlink" title="步骤三：半冗余内存内排序（Semi-Redundant In-Memory Sort）【翻译出来怪怪的】"></a>步骤三：半冗余内存内排序（Semi-Redundant In-Memory Sort）【翻译出来怪怪的】</h3><p>如上面讨论的，Tag Engine可能返回了缓存的数据。缓存数据是无法保证精确的，这是缓存的天性（缓存是事物过去某一状态的快照）。相对的，数据库永远是保存最新的、最权威的数据。所以有时两者会产生冲突。</p><p>为了解决这个问题，我们会对结果页的post再排序一次。这一步解决了这样一个问题，即结果页的post的元数据实际上已经更新到数据库而Tag Engine还没缓存到。</p><p>这一部分没有什么让人兴奋的内容，就是根据你浏览的tab页面来传不同的比较函数给<code>List&lt;T&gt;.Sort</code>。看<code>Newest</code>tab就比较post的创建时间，浏览<code>Votes</code>就比较<code>score</code>和答案<code>votes</code>数，等等。</p><p>如果不做这最后一步，post展现在页面上是可能不是有序的。因为Tag Engine用于排序的字段的值和当前数据库的值可能不一样。</p><p>最后，我们才把问题列表展示给你看。</p><hr><p>原文中的问题和答案下面都有一些讨论，可以到原文中看看，这里就不译了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;原文是Stackoverflow上的一个&lt;a href=&quot;https://meta.stackoverflow.com/questions/322164/how-does-stack-overflow-do-pagination&quot; target=&quot;_blank&quot; rel=&quot;
-      
-    
-    </summary>
-    
-      <category term="Tech" scheme="https://www.sezina.io/categories/Tech/"/>
-    
-    
-      <category term="翻译" scheme="https://www.sezina.io/tags/%E7%BF%BB%E8%AF%91/"/>
-    
-      <category term="Stack Overflow" scheme="https://www.sezina.io/tags/Stack-Overflow/"/>
     
   </entry>
   
