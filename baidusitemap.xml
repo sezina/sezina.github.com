@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>https://www.sezina.io/2019/11/10/upgrading-nginx-on-ubuntu/</loc>
+    <lastmod>2019-11-10T08:28:30.647Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu上升级nginx</title>
+        <pubTime>2019-11-10T08:26:13.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>技术</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tech" url="https://www.sezina.io/categories/Tech/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.sezina.io/2018/11/16/acoustic-guitar-notes-tuning-index/</loc>
     <lastmod>2019-10-21T06:54:53.908Z</lastmod>
     <data>
@@ -324,9 +350,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>书籍</tag>
-         
         <tag>JAVA</tag>
+         
+        <tag>书籍</tag>
          
          
            
@@ -826,9 +852,9 @@
         <title>写在2016伊始</title>
         <pubTime>2016-01-10T15:30:24.000Z</pubTime>
         
-        <tag>展望</tag>
-         
         <tag>总结</tag>
+         
+        <tag>展望</tag>
          
          
            

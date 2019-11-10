@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sezina.io/"/>
-  <updated>2019-05-16T17:17:42.103Z</updated>
+  <updated>2019-11-10T08:28:30.647Z</updated>
   <id>https://www.sezina.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu上升级nginx</title>
+    <link href="https://www.sezina.io/2019/11/10/upgrading-nginx-on-ubuntu/"/>
+    <id>https://www.sezina.io/2019/11/10/upgrading-nginx-on-ubuntu/</id>
+    <published>2019-11-10T08:26:13.000Z</published>
+    <updated>2019-11-10T08:28:30.647Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>备份配置文件</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak</span><br></pre></td></tr></table></figure><ol start="2"><li>安装相关依赖</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install software-properties-common python-software-properties</span><br></pre></td></tr></table></figure><ol start="3"><li>添加nginx到apt仓库</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">add-apt-repository ppa:nginx/stable</span><br></pre></td></tr></table></figure><ol start="4"><li>升级安装包</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure><ol start="5"><li>安装nginx</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install nginx</span><br></pre></td></tr></table></figure><p>根据提示进行相应的输入。</p><ol start="6"><li>查看nginx版本</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -V</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;备份配置文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td c
+      
+    
+    </summary>
+    
+      <category term="Tech" scheme="https://www.sezina.io/categories/Tech/"/>
+    
+    
+      <category term="Linux" scheme="https://www.sezina.io/tags/Linux/"/>
+    
+      <category term="技术" scheme="https://www.sezina.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="Ubuntu" scheme="https://www.sezina.io/tags/Ubuntu/"/>
+    
+      <category term="Nginx" scheme="https://www.sezina.io/tags/Nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>说说读书</title>
@@ -467,9 +501,9 @@
     
       <category term="程序开发" scheme="https://www.sezina.io/tags/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
     
-      <category term="书籍" scheme="https://www.sezina.io/tags/%E4%B9%A6%E7%B1%8D/"/>
-    
       <category term="JAVA" scheme="https://www.sezina.io/tags/JAVA/"/>
+    
+      <category term="书籍" scheme="https://www.sezina.io/tags/%E4%B9%A6%E7%B1%8D/"/>
     
   </entry>
   
@@ -609,37 +643,6 @@
       <category term="旅游" scheme="https://www.sezina.io/tags/%E6%97%85%E6%B8%B8/"/>
     
       <category term="日本" scheme="https://www.sezina.io/tags/%E6%97%A5%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件开发团队的工作紧张度</title>
-    <link href="https://www.sezina.io/2018/05/12/work-intensity-in-software-project/"/>
-    <id>https://www.sezina.io/2018/05/12/work-intensity-in-software-project/</id>
-    <published>2018-05-12T02:05:35.000Z</published>
-    <updated>2018-05-12T02:09:26.497Z</updated>
-    
-    <content type="html"><![CDATA[<p>去年有那么一段时间，我带的团队每每到发布前都需要加班甚至要延期发布。思考后觉得是整个团队的工作安排得不合理。工作的节奏有些问题。归根到底，就是我这个当leader的没做好，任务拆解不对，导致大家工作节奏混乱。那段时间可真心累啊，拖着大家加班，自己也心烦意乱。<br>思索良久，不断摸索，不断调整团队的工作节奏，最终我觉得，在实际开发过程中，工作的紧张程度应该像下图中所展示的才算是比较合理的。</p><img src="/images/work_intensity_curve/work_intensity_curve.jpeg"><p>我们团队的工作节奏也慢慢调整成符合图形所示，保证了产出又工作得愉快。<br>下面大致解释一下图上3条线。</p><h2 id="负责人"><a href="#负责人" class="headerlink" title="负责人"></a>负责人</h2><p>负责人的身份可能是小组长、项目经理、技术经理等。<br>负责人在整个开发周期上都保持着一个比较稳定的紧张程度，最重要的一个原因是负责人需要对成果负责。从一开始接到新需求（项目）或自己挖掘需求（产品），负责人需要将自己将需求理解清楚，整理成清晰的描述放在脑子里或落实到文档上。然后召集相关的人员（包括开发、测试、设计等）需求说明会，向他们描述需求，确保大家正确理解需求。之后需要进行合理的任务切分和分派，保障能按时按质的发布。<br>团队较小的负责人，可能还需要负责架构、接口的设计和技术的选型等，甚至可能撸起袖子亲自上阵写代码。这类负责人的工作紧张度在图中应该再往上移些。<br>待开发的差不多了开始进入大范围测试的阶段时，负责人还需承担测试的工作。因为负责人对产出需要负责，需要测试系统是否满足需求。这个时候越临近发布，紧张程度越高，一直维持到成果发布上线并且没有问题。之后又回到了平稳的紧张水平。开始进入下一个周期。<br>而开发和测试的紧张度的张弛情况则比较明显。</p><h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><p>开发侧在周期开始时正常情况下是比较轻松的一个时期，这个时候等待着负责人描述新需求，然后理解新需求，之后思考如何实现这些需求。提出实现方案和负责人讨论，理清其中的利弊，确定实现方案后，开始开发。在这一过程中，开发的紧张度是不断上升的。在开发中后期紧张度比负责人还高，因为这个时候，开发进来着大量编码，功能不断开发出来了，而测试也开始介入，新功能开发和修复bug的工作同步进行。<br>在开发周期后期，开发的工作紧张度理应开始下降，这个时候新功能已经开发完毕，大部分工作应该是修复测试发现的bug。而且越临近发布，bug越少，开发工作量越小。<br>bug修复完毕，通过测试，负责人同意发布，系统发布成功上线。这个时候开发的紧张度很快就回到了一开始的低点。</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>测试在周期开始阶段和开发紧张度和开发差不多，也是从正确理解需求开始。前期，测试有较长一段轻松的时间，因为这段时间还没有开发出可供测试的功能，这段时间测试的紧张度主要体现在准备测试用例上。当开发开始完成了可测试功能开始，测试的工作紧张度就开始上来了。当周期越接近后期，完成功能越多，加上已测试功能的bug修复回测，测试的工作也越来越紧张。<br>因为测试需要在上线前对项目或产品质量把关（另一个是负责人），所以往往发布前测试的工作紧张度是这个周期里最高的时候。当所有功能通过测试，项目成功发布上线，压力释放，测试的工作紧张度迅速下降。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;去年有那么一段时间，我带的团队每每到发布前都需要加班甚至要延期发布。思考后觉得是整个团队的工作安排得不合理。工作的节奏有些问题。归根到底，就是我这个当leader的没做好，任务拆解不对，导致大家工作节奏混乱。那段时间可真心累啊，拖着大家加班，自己也心烦意乱。&lt;br&gt;思索良久
-      
-    
-    </summary>
-    
-      <category term="Tech" scheme="https://www.sezina.io/categories/Tech/"/>
-    
-    
-      <category term="总结" scheme="https://www.sezina.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="工作" scheme="https://www.sezina.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="程序开发" scheme="https://www.sezina.io/tags/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="管理" scheme="https://www.sezina.io/tags/%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
