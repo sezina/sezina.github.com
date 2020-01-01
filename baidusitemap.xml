@@ -4,25 +4,19 @@
 
     
   <url>
-    <loc>https://www.sezina.io/2019/11/10/upgrading-nginx-on-ubuntu/</loc>
-    <lastmod>2019-11-10T08:28:30.647Z</lastmod>
+    <loc>https://www.sezina.io/2020/01/01/2020/</loc>
+    <lastmod>2020-01-01T14:19:02.292Z</lastmod>
     <data>
         <display>
-        <title>ubuntu上升级nginx</title>
-        <pubTime>2019-11-10T08:26:13.000Z</pubTime>
+        <title>2020</title>
+        <pubTime>2020-01-01T14:14:53.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
-        <tag>技术</tag>
-         
-        <tag>Ubuntu</tag>
-         
-        <tag>Nginx</tag>
+        <tag>生活</tag>
          
          
            
              
-              <breadCrumb title="Tech" url="https://www.sezina.io/categories/Tech/"/>
+              <breadCrumb title="Chitchat" url="https://www.sezina.io/categories/Chitchat/"/>
           
         </display>
     </data>
@@ -31,7 +25,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/11/16/acoustic-guitar-notes-tuning-index/</loc>
-    <lastmod>2019-10-21T06:54:53.908Z</lastmod>
+    <lastmod>2020-01-01T14:15:37.908Z</lastmod>
     <data>
         <display>
         <title>指弹吉他笔记 -- 吉他调弦索引</title>
@@ -55,6 +49,32 @@
            
              
               <breadCrumb title="Music" url="https://www.sezina.io/categories/Music/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.sezina.io/2019/11/10/upgrading-nginx-on-ubuntu/</loc>
+    <lastmod>2019-11-10T08:28:30.647Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu上升级nginx</title>
+        <pubTime>2019-11-10T08:26:13.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>技术</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tech" url="https://www.sezina.io/categories/Tech/"/>
           
         </display>
     </data>
@@ -350,9 +370,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>JAVA</tag>
-         
         <tag>书籍</tag>
+         
+        <tag>JAVA</tag>
          
          
            
@@ -1000,11 +1020,11 @@
         <title>读《奇特的一生》</title>
         <pubTime>2013-12-12T06:16:00.000Z</pubTime>
         
+        <tag>自我管理</tag>
+         
         <tag>书</tag>
          
         <tag>阅读</tag>
-         
-        <tag>自我管理</tag>
          
          
            
@@ -1024,11 +1044,11 @@
         <title>The Road Less Travelled 摘录</title>
         <pubTime>2013-12-08T07:02:00.000Z</pubTime>
         
-        <tag>心智</tag>
-         
         <tag>书</tag>
          
         <tag>阅读</tag>
+         
+        <tag>心智</tag>
          
          
            
