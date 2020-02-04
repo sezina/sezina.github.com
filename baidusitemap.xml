@@ -4,8 +4,32 @@
 
     
   <url>
+    <loc>https://www.sezina.io/2020/02/04/how-pamuks-read/</loc>
+    <lastmod>2020-02-04T13:48:06.845Z</lastmod>
+    <data>
+        <display>
+        <title>《帕慕克们怎样读书》书单</title>
+        <pubTime>2020-02-04T13:44:59.000Z</pubTime>
+        
+        <tag>书</tag>
+         
+        <tag>阅读</tag>
+         
+        <tag>理财</tag>
+         
+         
+           
+             
+              <breadCrumb title="Reading" url="https://www.sezina.io/categories/Reading/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.sezina.io/2020/01/01/2020/</loc>
-    <lastmod>2020-01-01T14:19:02.292Z</lastmod>
+    <lastmod>2020-01-01T14:18:59.000Z</lastmod>
     <data>
         <display>
         <title>2020</title>
@@ -25,7 +49,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/11/16/acoustic-guitar-notes-tuning-index/</loc>
-    <lastmod>2020-01-01T14:15:37.908Z</lastmod>
+    <lastmod>2020-01-01T14:15:24.000Z</lastmod>
     <data>
         <display>
         <title>指弹吉他笔记 -- 吉他调弦索引</title>
@@ -193,7 +217,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/12/01/financing-for-tidying-up-our-life/</loc>
-    <lastmod>2018-12-01T07:30:29.816Z</lastmod>
+    <lastmod>2018-12-01T07:30:10.000Z</lastmod>
     <data>
         <display>
         <title>《理财就是理生活》摘录</title>
@@ -244,7 +268,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/10/18/reverse-SSH-tunneling/</loc>
-    <lastmod>2018-10-18T03:24:01.148Z</lastmod>
+    <lastmod>2018-10-18T03:22:49.000Z</lastmod>
     <data>
         <display>
         <title>转--使用SSH反向隧道进行内网穿透</title>
@@ -270,7 +294,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/08/20/201808-book-list/</loc>
-    <lastmod>2018-08-20T15:04:21.407Z</lastmod>
+    <lastmod>2018-08-20T15:02:56.000Z</lastmod>
     <data>
         <display>
         <title>2018年8月购书单</title>
@@ -292,7 +316,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/07/16/about-recruitment/</loc>
-    <lastmod>2018-07-25T09:41:07.822Z</lastmod>
+    <lastmod>2018-07-25T09:41:02.000Z</lastmod>
     <data>
         <display>
         <title>关于面试招人</title>
@@ -360,7 +384,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/07/05/10-Books-Java-Developers-Should-Read-in-2018/</loc>
-    <lastmod>2018-07-05T04:29:09.267Z</lastmod>
+    <lastmod>2018-07-05T04:29:01.000Z</lastmod>
     <data>
         <display>
         <title>转发 2018年Java程序员最应该阅读的书籍 - 最好的书籍</title>
@@ -370,9 +394,9 @@
          
         <tag>程序开发</tag>
          
-        <tag>书籍</tag>
-         
         <tag>JAVA</tag>
+         
+        <tag>书籍</tag>
          
          
            
@@ -386,7 +410,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/05/23/good-goods-2/</loc>
-    <lastmod>2018-05-23T11:22:11.433Z</lastmod>
+    <lastmod>2018-05-23T11:21:43.000Z</lastmod>
     <data>
         <display>
         <title>好物2</title>
@@ -454,7 +478,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/05/17/About-Diary-or-Journal/</loc>
-    <lastmod>2018-05-17T12:56:27.473Z</lastmod>
+    <lastmod>2018-05-17T12:56:18.000Z</lastmod>
     <data>
         <display>
         <title>关于日记 | About Diary or Journal</title>
@@ -496,7 +520,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/05/14/travel-in-tokyo-senji/</loc>
-    <lastmod>2018-05-14T14:42:21.475Z</lastmod>
+    <lastmod>2018-05-14T14:42:09.000Z</lastmod>
     <data>
         <display>
         <title>东京7日游之圣地巡礼</title>
@@ -522,7 +546,7 @@
     
   <url>
     <loc>https://www.sezina.io/2018/05/12/work-intensity-in-software-project/</loc>
-    <lastmod>2018-05-12T02:09:26.497Z</lastmod>
+    <lastmod>2018-05-12T02:08:48.000Z</lastmod>
     <data>
         <display>
         <title>软件开发团队的工作紧张度</title>
@@ -872,9 +896,9 @@
         <title>写在2016伊始</title>
         <pubTime>2016-01-10T15:30:24.000Z</pubTime>
         
-        <tag>总结</tag>
-         
         <tag>展望</tag>
+         
+        <tag>总结</tag>
          
          
            
@@ -1020,11 +1044,11 @@
         <title>读《奇特的一生》</title>
         <pubTime>2013-12-12T06:16:00.000Z</pubTime>
         
-        <tag>自我管理</tag>
-         
         <tag>书</tag>
          
         <tag>阅读</tag>
+         
+        <tag>自我管理</tag>
          
          
            
@@ -1044,11 +1068,11 @@
         <title>The Road Less Travelled 摘录</title>
         <pubTime>2013-12-08T07:02:00.000Z</pubTime>
         
+        <tag>心智</tag>
+         
         <tag>书</tag>
          
         <tag>阅读</tag>
-         
-        <tag>心智</tag>
          
          
            
